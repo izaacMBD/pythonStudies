@@ -60,9 +60,21 @@ def exemplo02():
             Classielison.variavel_de_classe += 1
     a = Classielison()
     b = Classielison()
+    c = Classielison()
     print(Classielison.variavel_de_classe)
 
+def exemplo03():
+    class Classielison:
+        def __init__(self, valor):
+            self.variavel_de_instancia = valor
+    a = Classielison(10)
+    b = Classielison(20)
+    c = Classielison(30)
+    print(a.variavel_de_instancia)
+    print(b.variavel_de_instancia)
+    print(c.variavel_de_instancia)
 
 # exemplo01()
 # exemplo1_test()
-exemplo02()
+# exemplo02()
+# exemplo03()
